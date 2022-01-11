@@ -6,33 +6,23 @@ body,html {
     overflow:hidden;
 }
 
-#bodyDiv{ display:block; }
-@media only screen and (orientation:portrait){
-  #bodyDiv{  
-    height: 100vw;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-}
-@media only screen and (orientation:landscape){
-  #bodyDiv{  
-     -webkit-transform: rotate(0deg);
-     -moz-transform: rotate(0deg);
-     -o-transform: rotate(0deg);
-     -ms-transform: rotate(0deg);
-     transform: rotate(0deg);
-  }
-}
-
-@media only screen and (max-width: 30em) {
-    body {
+@media only screen and (max-width: 25em) {
+    #bodyDiv {
         display: none !important;
     }
 }
 
+@media only screen and (min-width: 35em) {
+    #toughGuy {
+        display: none !important;
+    }
+}
+
+#toughGuy {
+    color: blue;
+    margin: 40%;
+    text-align: center;
+}
 
 #bodyDiv {
     margin: 0px;
