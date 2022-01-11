@@ -116,7 +116,7 @@ body,html {
     height: 100%;
     background-color: rgb(197, 202, 204);
     border-radius: 10%;
-    font-size: 325%;
+    font-size: 5vh;
     font-weight: bold;
     color: rgb(51, 123, 185);
     border-color: aliceblue;
