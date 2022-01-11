@@ -4,6 +4,9 @@ equation=[''];
 c=0;
 result=0;
 
+// $.get("https://ipinfo.io", function(response) {
+//             alert(response.ip);
+//         }, "json")
 document.addEventListener("contextmenu", function(e){
     e.preventDefault();
 }, false);
