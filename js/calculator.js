@@ -7,7 +7,6 @@ result=0;
 document.addEventListener("contextmenu", function(e){
     e.preventDefault();
 }, false);
-
 let calculator = () => {
     inputValue = window.event.target.value;
     if (inputValue == '\+' || inputValue == '\-' || inputValue == '\*' ||inputValue == '\/') {
