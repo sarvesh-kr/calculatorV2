@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>HCKME - Calculator</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/calculator.js"></script>
+</head>
+<body>
+    <div id="bodyDiv">
+        <div id="headerDiv">HCKME</div>
+        <div id="internalBodyDiv">
+            <div id="calculatorButtons">
+                <button class="calcButtons" id="1" value="1" onclick="document.getElementById('outputScreen').value += document.getElementById('1').value; calculator();">1</button>
+                <button class="calcButtons" id="2" value="2" onclick="document.getElementById('outputScreen').value += document.getElementById('2').value; calculator();">2</button>
+                <button class="calcButtons" id="3" value="3" onclick="document.getElementById('outputScreen').value += document.getElementById('3').value; calculator();">3</button>
+                <button class="calcButtons" id="4" value="4" onclick="document.getElementById('outputScreen').value += document.getElementById('4').value; calculator();">4</button>
+                <button class="calcButtons" id="5" value="5" onclick="document.getElementById('outputScreen').value += document.getElementById('5').value; calculator();">5</button>
+                <button class="calcButtons" id="6" value="6" onclick="document.getElementById('outputScreen').value += document.getElementById('6').value; calculator();">6</button>
+                <button class="calcButtons" id="7" value="7" onclick="document.getElementById('outputScreen').value += document.getElementById('7').value; calculator();">7</button>
+                <button class="calcButtons" id="8" value="8" onclick="document.getElementById('outputScreen').value += document.getElementById('8').value; calculator();">8</button>
+                <button class="calcButtons" id="9" value="9" onclick="document.getElementById('outputScreen').value += document.getElementById('9').value; calculator();">9</button>
+                <button class="calcButtons" id="0" value="0" onclick="document.getElementById('outputScreen').value += document.getElementById('0').value; calculator();">0</button>
+                <button class="calcButtons" id="." value="." onclick="document.getElementById('outputScreen').value += document.getElementById('.').value; calculator();">.</button>
+                <button class="calcButtons" id="clearr" value="clear" onclick="calculator();">clr</button>
+                <button class="calcButtons">/13</button>
+                <button class="calcButtons">/14</button>
+                <button class="calcButtons">/15</button>
+                <button class="calcButtons">/16</button>
+                <button class="calcButtons">/17</button>
+                <button class="calcButtons">/18</button>
+                <button class="calcButtons">/19</button>
+                <button class="calcButtons">/20</button>
+                <button class="calcButtons">/21</button>
+                <button class="calcButtons">/22</button>
+                <button class="calcButtons" id="+" value="+" onclick="document.getElementById('outputScreen').value += document.getElementById('+').value; calculator();">+</button>
+                <button class="calcButtons" id="-" value="-" onclick="document.getElementById('outputScreen').value += document.getElementById('-').value; calculator();">−</button>
+                <button class="calcButtons">/25</button>
+                <button class="calcButtons">/26</button>
+                <button class="calcButtons">/27</button>
+                <button class="calcButtons">/28</button>
+                <button class="calcButtons">/29</button>
+                <button class="calcButtons">/30</button>
+                <button class="calcButtons">/31</button>
+                <button class="calcButtons">/32</button>
+                <button class="calcButtons">/33</button>
+                <button class="calcButtons">/34</button>
+                <button class="calcButtons" id="*" value="*" onclick="document.getElementById('outputScreen').value += document.getElementById('*').value; calculator();">*</button>
+                <button class="calcButtons" id="/" value="/" onclick="document.getElementById('outputScreen').value += document.getElementById('/').value; calculator();">/</button>
+                <button class="calcButtons">/37</button>
+                <button class="calcButtons">/38</button>
+                <button class="calcButtons">/39</button>
+                <button class="calcButtons">/40</button>
+                <button class="calcButtons">/41</button>
+                <button class="calcButtons">/42</button>
+                <button class="calcButtons">/43</button>
+                <button class="calcButtons">/44</button>
+                <button class="calcButtons">/45</button>
+                <button class="calcButtons">/46</button>
+                <button class="calcButtons" id="enter" value="=" onclick="display();" >Enter↲</button>
+                <!-- <button class="calcButtons">48</button> -->
+                <button class="calcButtons">/49</button>
+                <button class="calcButtons">/50</button>
+                <button class="calcButtons">/51</button>
+                <button class="calcButtons">/52</button>
+                <button class="calcButtons">/53</button>
+                <button class="calcButtons">/54</button>
+                <button class="calcButtons">/55</button>
+                <button class="calcButtons">/56</button>
+                <button class="calcButtons">/57</button>
+                <button class="calcButtons">/58</button>
+                <button class="calcButtons">/59</button>
+                <button class="calcButtons">/60</button>
+                <button class="calcButtons">/61</button>
+                <button class="calcButtons">/62</button>
+                <button class="calcButtons">/63</button>
+                <button class="calcButtons">/64</button>
+                <button id="space" class="calcButtons">⌴</button>
+                <button class="calcButtons">/69</button>
+                <button class="calcButtons">/70</button>
+                <button class="calcButtons">/71</button>
+                <button class="calcButtons">/72</button>
+            </div>
+            <div id="calculatorDisplay">
+                    <input id="outputScreen" type="text" placeholder="0" disabled>
+            </div>
+        </div>
+        <div id="footerDiv">
+            //Project is in development <br> &copy;Copyright: HCKME
+        </div>
+    </div>
+</body>
+</html>
