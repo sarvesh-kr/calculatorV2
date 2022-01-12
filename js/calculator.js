@@ -42,7 +42,7 @@ let display = () => {
         result=equation[star-1];
         if (equation[star] == '\^') {
             for (let index = 1; index < parseInt(equation[star+1]); index++) {
-                result=result*equation[star-1];
+                result*=equation[star-1];
             }
             equation[star-1]=result;
             equation.splice(star,2);
