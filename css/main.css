@@ -111,6 +111,15 @@ body,html {
     transform: rotateZ(10deg);
 }
 
+#equationString {
+    height: 30%;
+    width: 100%;
+    color: rgb(213, 227, 236);
+    font-size: 175%;
+    margin-top: 2%;
+    text-align: right;
+}
+
 .calcButtons {
     padding: 0.01%;
     height: 15%;
@@ -145,7 +154,7 @@ body,html {
     font-weight: bold;
     color: rgb(51, 123, 185);
     border-color: aliceblue;
-    margin-top:1%;
+    margin-top:0%;
     margin-right: 9%;
     border-width: 0px;
 }

@@ -17,6 +17,7 @@ let calculator = () => {
         equation[c] += inputValue;
         c++;
         equation[c] = '';
+        document.getElementById("equationString").innerHTML += `${inputValue}`;
     } else {
         if (inputValue == "clear") {
             var snd = new Audio("sound/buttonSound/clickSound.wav");
@@ -29,6 +30,7 @@ let calculator = () => {
             var snd = new Audio("sound/buttonSound/clickSound.wav");
             snd.play();
             equation[c] += inputValue;
+            document.getElementById("equationString").innerHTML += `${inputValue}`;
         }
     }
 }
