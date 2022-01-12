@@ -4,15 +4,12 @@ equation=[''];
 c=0;
 result=0;
 
-// $.get("https://ipinfo.io", function(response) {
-//             alert(response.ip);
-//         }, "json")
 document.addEventListener("contextmenu", function(e){
     e.preventDefault();
 }, false);
 let calculator = () => {
     inputValue = window.event.target.value;
-    if (inputValue == '\+' || inputValue == '\-' || inputValue == '\*' ||inputValue == '\/') {
+    if (inputValue == '\+' || inputValue == '\-' || inputValue == '\*' || inputValue == '\/' || inputValue =='\^') {
         var snd = new Audio("sound/buttonSound/clickSound.wav");
         snd.play();
         c++;
@@ -35,6 +32,8 @@ let calculator = () => {
         }
     }
 }
+
+
 //equation has the value
 let display = () => {
     var snd = new Audio("sound/buttonSound/clickSound.wav");
@@ -75,6 +74,16 @@ let display = () => {
             star=0;
         }
     }
+    for (let star = 0; star < equation.length; star++) {
+        if (equation[star] == '\^') {
+            result = parseFloat(equation[star-1]);
+            equation[star-1] = result * parseFloat(equation[star+1]);
+            result=equation[star-1];
+            equation.splice(star,2);
+            star=0;
+        }
+    }
+
     equation[0]=result;
     c=0;
     document.getElementById("outputScreen").value = result;
