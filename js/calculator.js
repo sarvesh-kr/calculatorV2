@@ -26,6 +26,7 @@ let calculator = () => {
             equation = [''];
             c= 0 ;
             result = 0;
+            document.getElementById("equationString").innerHTML = ``;
         } else {
             var snd = new Audio("sound/buttonSound/clickSound.wav");
             snd.play();
@@ -90,7 +91,7 @@ let display = () => {
 
     equation[0]=result;
     c=0;
-    document.getElementById("outputScreen").value = result;
+    document.getElementById("outputScreen").value = `=${result}`;
     if(isNaN(result)) {
         document.getElementById("outputScreen").value = `You're smart enough!`;
     }
